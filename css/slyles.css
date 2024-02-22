@@ -61,6 +61,8 @@ address {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .visualy-hidden {
@@ -101,9 +103,32 @@ ul {
 }
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+
   text-decoration: underline;
 }
+/* Header */
+.header {
+  background-color: lightgray;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+  gap: 40px;
+}
+.header-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.header-nav {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
 /* Hero-section */
 .hero-section {
   padding: 272px 0px;
@@ -119,12 +144,21 @@ ul {
   color: var(--color-brand-light);
 }
 /* Advantages section */
-.andvantages-list {
-  color: var(--color-primary-light);
+.advantages-section {
+  padding: 16px 0;
   background-color: var(--color-brand-light);
 }
-.advantakes-item {
-  font-size: 30px;
+.andvantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  background-color: var(--color-brand-light);
+}
+.advantages-item {
+  display: flex;
+  color: var(--color-primary-light);
+  font-size: 20px;
   font-weight: 300;
 }
 /* section-title */
@@ -141,8 +175,17 @@ ul {
 .tradition-section {
   padding-top: 96px;
 }
+
 .tradition-title {
   margin-bottom: 42px;
+}
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.tradition-content {
+  max-width: 710px;
 }
 .traditions-text .brand {
   color: var(--color-brand-light);
@@ -151,6 +194,9 @@ ul {
 
 .traditions-text .uppercase {
   text-transform: uppercase;
+}
+.traditions-text:nth-child(3) {
+  max-width: 340px;
 }
 /* Chef section */
 .chef-title {
@@ -162,11 +208,23 @@ ul {
 .chefs-title {
   margin-bottom: 80px;
 }
-.chefs-title {
-}
+
 /* Formats section */
+.formats-list {
+  display: flex;
+  gap: 20px;
+}
+.format-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.format-card {
+  padding: 24px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+
 .formats-title {
-  margin: 80px;
+  margin-bottom: 80px;
 }
 .format-title {
   font-size: 24px;
@@ -178,7 +236,7 @@ ul {
   font-weight: 300;
 }
 /* contact section */
-..contact-title {
+.contact-title {
   margin-bottom: 16px;
 }
 /* footer */
